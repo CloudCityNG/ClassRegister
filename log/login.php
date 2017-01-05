@@ -11,8 +11,8 @@
 	
 	if($data){
 		$_SESSION['logged_user'] = $chosenGroup;
-		header("Location: ../content/schedule.php");
+		header("Location: ../content/schedule");
 	}
 	else
-		header("Location: ../index.php");
+		header("Location: authorization");
 ?>

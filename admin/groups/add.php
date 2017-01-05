@@ -1,6 +1,6 @@
 <?php
 
-	include("../connection/connection.php");
+	include("../../connection/connection.php");
 	
 	$groupName = $_REQUEST["group"];
  	$password = $_REQUEST["password"];
@@ -13,6 +13,6 @@
 		$q = "INSERT INTO `groups` (`name`, `password`) VALUES ('$groupName', '$password')";
 
 	mysqli_query($connection,$q);
-	header("Location: admin.php");
+	header("Location: ../admin.php");
 	
 ?>

@@ -1,6 +1,6 @@
 <?php 
 	include("../connection/connection.php"); 
-	include("../template/header.php");
+	include("../layouts/header.php");
 	
 	if(isset( $_REQUEST["date"]))
 		$chosenDate = $_REQUEST["date"];
@@ -17,16 +17,16 @@
 	$data = mysqli_fetch_array($result);
 ?>
 <!-- Content -->
-<div class = "content ">
+<div class = "content">
 
 	<h1 class="text-xs-center"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Посещаемость группы <?php echo $data["groupName"];?></h1>
 	<br>
 
 	<div class = "row">
-		<div class = "col-xs-4">
-		</div>
-			<form  action = "attendance.php" class = "col-xs-3">  
-			    <input type="date" class="form-control" aria-describedby="basic-addon2" name = "date">
+		<div class="col-xs-4"></div>
+		<div class="col-xs-4">
+			<form>  
+			    <input type="date" class="form-control " aria-describedby="basic-addon2" name = "date">
 					<?php 
 						if($_SESSION['logged_user'] == "admin"){
 					?>
@@ -48,8 +48,9 @@
 						}
 					?>
 				<br>
-			    <input type="submit" class = "btn btn-primary" value = "Подтвердить">
+			    <input type="submit" class = "btn btn-primary " value = "Подтвердить">
 			</form>
+		</div>
 	</div>
 
 	<?php if(isset($data)){?>
@@ -79,12 +80,11 @@
 					?>
 					<span class="tag  tag-pill float-xs-right 	
 															  	<?php 
-																	if($attended == "+")
+																	if($attended)
 																		echo "tag-success fa fa-check";
-																	else if($attended == "-")
+																	else
 																		echo "tag-danger fa fa-close";
 																?> ">
-
 					</span>
 				</li>
 				<?php 
@@ -103,4 +103,4 @@
 		?>
 </div>
 <!-- Content End -->
-<?php include("../template/footer.php"); ?>
+<?php include("../layouts/footer.php"); ?>

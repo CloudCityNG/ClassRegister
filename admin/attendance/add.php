@@ -1,6 +1,6 @@
 <?php
 
-	include("../connection/connection.php");
+	include("../../connection/connection.php");
 	
 	$groupName = $_REQUEST["group"];
  	$date= $_REQUEST["date"];
@@ -18,6 +18,5 @@
 
 	mysqli_query($connection,$q);
 	
-	header("Location: ../content/attendance.php");
-
+	header("Location: ../../content/attendance.php");
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-	include("../connection/connection.php");
+	include("../../connection/connection.php");
 	
 	$groupName = $_REQUEST["group"];
  	$day= $_REQUEST["day"];
@@ -16,6 +16,6 @@
 		$q = "INSERT INTO `schedule` (`groupName`, `$day`) VALUES ('$groupName', '$schedule')";
 
 	mysqli_query($connection,$q);
-	header("Location: ../content/schedule.php");
+	header("Location: ../../content/schedule.php");
 
 ?>

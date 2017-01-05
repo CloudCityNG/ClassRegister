@@ -1,6 +1,6 @@
 <?php 
 	include("../connection/connection.php"); 
-	include("../template/header.php");
+	include("../layouts/header.php");
 	
 	if(isset($_REQUEST["group"]))
 		$chosenGroup = $_REQUEST["group"];
@@ -25,7 +25,7 @@
 	<?php 
 		if($_SESSION['logged_user'] == "admin"){
 	?>
-		<form  class="text-xs-center" action = "schedule.php">  
+		<form  class="text-xs-center">  
 			<select  name="group" class="custom-select" >
 				<option   selected disabled>Выберите группу</option>
 					<?php
@@ -138,4 +138,4 @@
 	</div>
 	<!-- Content End -->
 
-<?php include("../template/footer.php"); ?>
+<?php include("../layouts/footer.php"); ?>

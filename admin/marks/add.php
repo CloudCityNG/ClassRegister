@@ -1,6 +1,6 @@
 <?php
 
-	include("../connection/connection.php");
+	include("../../connection/connection.php");
 	
 	$studentName = $_REQUEST["student"];
 	$mark = $_REQUEST["mark"];
@@ -17,6 +17,6 @@
 		$q = "INSERT INTO `marks` (`groupName`, `studentName`, `marks`) VALUES ('$groupName', '$studentName', '$mark')";
 
 	mysqli_query($connection,$q);
-	header("Location: ../content/marks.php");
+	header("Location: ../../content/marks.php");
 	
 ?>

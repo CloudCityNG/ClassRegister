@@ -1,6 +1,6 @@
 <?php 
 	include("../connection/connection.php"); 
-	include("../template/header.php"); 
+	include("../layouts/header.php"); 
 ?>
 
 	<!-- Content -->
@@ -13,10 +13,10 @@
 			</div>
 			<div class ="col-xs-8" id="accordion" role="tablist" aria-multiselectable="true">
 				<?php 
-					include("adminGroup.php"); 
-					include("adminMark.php"); 
-					include("adminSchedule.php"); 
-					include("adminAttendance.php"); 
+					include("groups/adminGroup.php"); 
+					include("marks/adminMark.php"); 
+					include("schedule/adminSchedule.php"); 
+					include("attendance/adminAttendance.php"); 
 				?>
 			</div>
 		</div>
@@ -24,7 +24,7 @@
 	<!-- Content End -->
 
 <?php 
-	include("../template/footer.php"); 
+	include("../layouts/footer.php"); 
 ?>
 
 

@@ -10,7 +10,7 @@
 	
 	<div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
 		<div class="card-block">
-			<form class = "col-md-6" action="addGroup.php">
+			<form class = "col-md-6" action="groups/add.php">
 				<div class="input-group ">
 			 		<input type="text" name = "group" class="form-control" placeholder="Введите название новой группы" aria-describedby="basic-addon2">
 				</div>

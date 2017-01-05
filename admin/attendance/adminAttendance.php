@@ -12,7 +12,7 @@
 
 		<div class="card-block">
 
-			<form action="addAttendance.php" class = "col-md-6">
+			<form action="attendance/add.php" class = "col-md-6">
 
 				<select  name="group" class="custom-select col-md-12" >
 			    	<option   selected disabled>Выберите группу</option>
@@ -38,13 +38,13 @@
 				<fieldset class="form-group">
 					<div class="form-check">
 						<label class="form-check-label">
-						<input type="radio" class="form-check-input" name="attended" id="optionsRadios1" value="+" checked>
+						<input type="radio" class="form-check-input" name="attended" id="optionsRadios1" value="1" checked>
 							Присутствовал
 						</label>
 					</div>
 					<div class="form-check">
 						<label class="form-check-label">
-						<input type="radio" class="form-check-input" name="attended" id="optionsRadios2" value="-">
+						<input type="radio" class="form-check-input" name="attended" id="optionsRadios2" value="0">
 							Отсутствовал
 						</label>
 					</div>

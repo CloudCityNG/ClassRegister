@@ -10,7 +10,7 @@
 
 	<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
 		<div class="card-block">
-			<form action="addSchedule.php" class = "col-md-6">
+			<form action="schedule/add.php" class = "col-md-6">
 				<select  name="group" class="custom-select col-md-12" >
 			    	<option   selected disabled>Выберите группу</option>
 			    	<?php 
