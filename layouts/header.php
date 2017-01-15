@@ -40,6 +40,9 @@
 			font-style:  italic;
 	  		flex: 0 0 auto;
 		}
+		.hidden{
+			display: none;
+		}
 	</style>
 	
 </head>
